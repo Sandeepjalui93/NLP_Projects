@@ -53,7 +53,14 @@ def sentiment_scores():
     y = data['Negative'].sum()
     z = data['Neutral'].sum()
 
-    return x,y,z 
+    max_value = max(x,y,z)
+    
+    if max_value == x:
+        return "Positive"
+    elif max_value == y:
+        return "Negative"
+    else:
+        return "Neutral"
 
 #Calling all functions
 load_dataset()
@@ -63,6 +70,9 @@ print(data)
 
 ratings = distribution_of_ratings()
 print('The rating distribution is\n',ratings)
+
+sentiment = sentiment_scores()
+print('The sentiment with maximum score is\n',sentiment)
 
 add_new_columns()
 x,y,z = sentiment_scores()
