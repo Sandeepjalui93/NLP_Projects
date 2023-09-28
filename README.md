@@ -7,7 +7,7 @@
 3) Spam Mail Detection: This dataset consists of 5.5k Email messages classified as either spam or ham. Data preprocessing and model building is done to predict whether the mail message is spam or ham. The highest precision and accuracy is 0.97 which is achieved by the Bernoulli Naive Bayes model.
 
 4) Language Prediction: This dataset has 22 languages with each language having 1000 records. The goal is to identify the type of language in the dataset. A count vectorizer is used to preprocess the data for modeling. Since it is a multi-classification problem, the Multinomial Naive Bayes algorithm is used to build the model giving an accuracy of around 95%.
-   
+
 To run code 1, 2 and 3 install the Nltk library and use command "python main.py" to run this code.
 
-5) Tweet_Classify :
+5) Corona_Tweet_Classify : https://www.kaggle.com/datasets/datatattle/covid-19-nlp-text-classification
